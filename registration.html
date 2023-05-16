@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crud operation in javascript</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: black;">
+    <table>
+        <tr>
+            <td>
+                <!--HTML form for crud operation-->
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="fullName">Full Name</label>
+                        <input type="text" name="fullName" id="fullName" >
+                    </div>
+                    <div>
+                        <label for="idNumber">ID Number</label>
+                        <input type="number" name="idNumber" id="idNumber">
+                    </div>
+                    <div>
+                        <label for="country">Country</label>
+                        <input type="text" name="country" id="country">
+                    </div>
+                    <div>
+                        <label for="language">Language</label>
+                        <input type="text" name="language" id="language">
+                    </div>
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit" style="background-color: greenyellow;">
+                        <input type="reset" value="Reset" style="background-color: orange;">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="user-registration-management">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>ID Number</th>
+                            <th>Country</th>
+                            <th>Language</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
